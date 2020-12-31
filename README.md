@@ -20,5 +20,7 @@
  - 開啟模擬器
  - 用Android Studio 執行一次android project
  - ```npm start```
+ - install TypeScript
+    ```npm install -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer```
 
  
