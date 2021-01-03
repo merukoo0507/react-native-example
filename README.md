@@ -1,6 +1,6 @@
 # RNSample
 
-### 環境設定
+### Environment
  - 安裝nodejs: https://nodejs.org/en/
  - 安裝watchman
     ```npm install watchman -g```
@@ -22,5 +22,15 @@
  - ```npm start```
  - install TypeScript
     ```npm install -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer```
-
+ - 
+	
+	
+#### Condictions
+ - React Native: Emulator stuck on “loading from localhost:8081..”
+	- https://stackoverflow.com/questions/50226232/react-native-emulator-stuck-on-loading-from-localhost8081
+	```adb reverse --list```
+	```adb reverse tcp:8081 tcp:8081```
+ - 
  
+
+#### Navigation
