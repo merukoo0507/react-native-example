@@ -7,6 +7,7 @@ export default function ViewSample() {
         <>
             <View style={styles.container} >
                 <View style={styles.box} />
+                
             </View>
         </>
     )
