@@ -23,15 +23,44 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import FlexDirectionBasics from './design/FlexDirectionBasics';
-import LoadImage from './design/LoadImage';
-import TouchView from './design/TouchView';
+import FlexDirectionBasics from './ts/design/FlexDirectionBasics';
+import LoadImage from './ts/design/LoadImage';
+import ButtonSample from './ts/design/ButtonSample';
+import FComponent from "./ts/design/FComponent";
+import CustomEvent from "./ts/design/CustomEvent";
+import Conditional from './ts/design/Conditional';
+import Input from './ts/design/Input';
+import ListKey from './ts/design/ListKey';
+import Memo from './ts/design/Memo';
+import UseStateTest from './ts/hooks/UseStateTest';
+import UseEffectTest from './ts/hooks/UseEffectTest';
+import UseRefTest from './ts/hooks/UseRefTest';
+import UseReducerTest from './ts/hooks/UseReducerTest'
+import CustomHook from './ts/hooks/CustomHook';
+import ViewSample from './ts/viewComponents/ViewSample';
+import LayoutSample from './ts/viewComponents/LayoutSample';
 
 const App = () => {
   return (
     // <FlexDirectionBasics />
     // <LoadImage />
-    <TouchView />
+    // <ButtonSample />
+
+    //Function Components
+    // <FComponent title="FComponent1" color="rrgb(59, 108, 212)" />
+    // <CustomEvent />
+
+    // <Conditional />
+    // <ListKey />
+    // <Memo />
+    // <UseStateTest />
+    // <UseReducerTest />
+    // <UseReducerTest />
+    // <UseEffectTest />
+    // <UseRefTest />
+    // <CustomHook />
+    // <ViewSample />
+    <LayoutSample />
   );
 };
 

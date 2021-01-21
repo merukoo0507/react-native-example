@@ -1,6 +1,6 @@
 # RNSample
 
-### 環境設定
+### Environment
  - 安裝nodejs: https://nodejs.org/en/
  - 安裝watchman
     ```npm install watchman -g```
@@ -22,5 +22,26 @@
  - ```npm start```
  - install TypeScript
     ```npm install -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer```
+ - 
+	
+	
+#### Condictions
+ - React Native: Emulator stuck on “loading from localhost:8081..”
+	- https://stackoverflow.com/questions/50226232/react-native-emulator-stuck-on-loading-from-localhost8081
+	```adb reverse --list```
+	```adb reverse tcp:8081 tcp:8081```
+ - Reset port 
+	- run server with specified port eg. "9988"
+	```react-native start --port 9988```
+	- build iOS and Android package which listens to above port
+	- Change the server and port number in Dev-settings after launching the app on simulator or device.
+	- iOS:
+	```Command + D in Mac and Ctrl + D in windows```
+	   - provide host as localhost and port as 8089 then apply changes
+	- Android:
+	```Command + M in Mac and Ctrl + M in windows```
+	   - change it to localhost:8089 then press ok
 
  
+
+#### Navigation
