@@ -1,13 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Button } from 'react-native'
 import {TextInput, Text, View, Image, StyleSheet} from 'react-native'
+import Dialog from "react-native-dialog";
+import { GlobalValues } from '../GlobalValues';
 
-export default function ViewSample() {
+
+export default function DialogSample() {
+    const [visible, setVisible] = useState(true);
+    
+    const handleCancel = () => {
+      setVisible(false);
+     };
     return (
         <>
-            <View style={styles.container} >
-                <View style={styles.box} />
-            </View>
+        <Dialog.Container visible={visible} onBackdropPress={handleCancel}>
+          <Dialog.Title>Title</Dialog.Title>
+          <Dialog.Button label="Cancel" onPress={handleCancel} />
+        </Dialog.Container>
         </>
     )
 }

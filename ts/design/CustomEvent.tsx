@@ -1,13 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from 'react-native'
 import {View, Image, StyleSheet} from 'react-native'
-
-function CustomerButton({title, onIncrement}) {
-    return <Button 
-                title={title} 
-                onPress={onIncrement} />
-}
-
+import CustomerButton from './CustomerButton'
 
 export default function CustomEvent() {
     const [count, setCount] = useState(0)
@@ -15,6 +9,6 @@ export default function CustomEvent() {
     return(
         <CustomerButton
             title = {`Click HERE to increment: ${count}`}
-            onIncrement={() => setCount(count+1)} />
+            onPress={() => setCount(count+1)} />
     )
 }
