@@ -14,6 +14,8 @@ import {
   View,
   Text,
   StatusBar,
+  TouchableWithoutFeedback,
+  TouchableOpacity,
 } from 'react-native';
 
 import {
@@ -39,6 +41,8 @@ import UseReducerTest from './ts/hooks/UseReducerTest'
 import CustomHook from './ts/hooks/CustomHook';
 import ViewSample from './ts/viewComponents/ViewSample';
 import LayoutSample from './ts/viewComponents/LayoutSample';
+import ModalSample from './ts/viewComponents/ModalSample';
+import DialogSample from './ts/viewComponents/DialogSample';
 
 const App = () => {
   return (
@@ -60,7 +64,10 @@ const App = () => {
     // <UseRefTest />
     // <CustomHook />
     // <ViewSample />
-    <LayoutSample />
+    // <LayoutSample />
+    <ModalSample />
+    // <DialogSample />
+
   );
 };
 
