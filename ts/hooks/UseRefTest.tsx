@@ -4,7 +4,7 @@ import {Button, TextInput, Text, View, Image, StyleSheet} from 'react-native'
 export default function UseRefTest() {
     //create and update a single mutable value
     //use .current to access the mutable value.
-    const intervalRef = useRef()
+    const intervalRef = useRef(null)
     const [count, setCount] = useState(0)
 
     useEffect(() => {

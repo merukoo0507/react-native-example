@@ -3,9 +3,9 @@ import { Button } from 'react-native'
 import {TextInput, Text, View, Image, StyleSheet} from 'react-native'
 
 function useInterval(callback, delay) {
-    const savedCallback = useRef()
+    const savedCallback = useRef(null)
     
-    //remember latest callback
+    // remember latest callback
     useEffect(() => {
         savedCallback.current = callback
     }, [callback])

@@ -25,24 +25,23 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import FlexDirectionBasics from './ts/design/FlexDirectionBasics';
-import LoadImage from './ts/design/LoadImage';
-import ButtonSample from './ts/design/ButtonSample';
-import FComponent from "./ts/design/FComponent";
-import CustomEvent from "./ts/design/CustomEvent";
-import Conditional from './ts/design/Conditional';
-import Input from './ts/design/Input';
-import ListKey from './ts/design/ListKey';
-import Memo from './ts/design/Memo';
+import FlexDirectionBasics from './ts/baseComponents/FlexDirectionBasics';
+import LoadImage from './ts/baseComponents/LoadImage';
+import ButtonSample from './ts/baseComponents/ButtonSample';
+import CustomEvent from "./ts/baseComponents/CustomEvent";
+import Conditional from './ts/baseComponents/Conditional';
+import Input from './ts/baseComponents/Input';
+import ListKey from './ts/baseComponents/ListKey';
+import MemoSample from './ts/baseComponents/MemoSample';
 import UseStateTest from './ts/hooks/UseStateTest';
 import UseEffectTest from './ts/hooks/UseEffectTest';
 import UseRefTest from './ts/hooks/UseRefTest';
 import UseReducerTest from './ts/hooks/UseReducerTest'
 import CustomHook from './ts/hooks/CustomHook';
-import ViewSample from './ts/viewComponents/ViewSample';
-import LayoutSample from './ts/viewComponents/LayoutSample';
-import ModalSample from './ts/viewComponents/ModalSample';
-import DialogSample from './ts/viewComponents/DialogSample';
+import ViewSample from './ts/samples/ViewSample';
+import LayoutSample from './ts/samples/toggleSample/LayoutSample';
+import ModalSample from './ts/samples/ModalSample';
+import DialogSample from './ts/samples/DialogSample';
 
 const App = () => {
   return (
@@ -56,7 +55,7 @@ const App = () => {
 
     // <Conditional />
     // <ListKey />
-    // <Memo />
+    // <MemoSample />
     // <UseStateTest />
     // <UseReducerTest />
     // <UseReducerTest />
@@ -64,8 +63,8 @@ const App = () => {
     // <UseRefTest />
     // <CustomHook />
     // <ViewSample />
-    // <LayoutSample />
-    <ModalSample />
+    <LayoutSample />
+    // <ModalSample />
     // <DialogSample />
 
   );

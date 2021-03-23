@@ -10,7 +10,7 @@ function Label({title}) {
 
 const LabelMemo = memo(Label)
 
-export default function Memo() {
+export default function MemoSample() {
     const [count, setCount] = useState(0)
 
     return (

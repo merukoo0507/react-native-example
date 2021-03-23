@@ -12,6 +12,10 @@ export default function LayoutSample() {
   const primaryAxis = flexDirection === 'row' ? 'Horizontal' : 'Vertical'
   const secondaryAxis = flexDirection === 'row' ? 'Vertical' : 'Horizontal'
 
+
+  useEffect(() => {
+      console.log(layoutStyle)
+  }, [flexDirection, justifyContent, alignItems])
     return (
         <View style={styles.container}>
             <Toggle

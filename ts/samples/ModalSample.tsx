@@ -1,9 +1,8 @@
 import React, { memo, useState } from "react";
 import { useEffect } from "react";
 import { Alert, Modal, StyleSheet, Text, TouchableOpacity, TouchableWithoutFeedback, View } from "react-native";
-import CustomerButton, { CustomerButtonInterface } from "../design/CustomerButton";
+import CustomerButton, { CustomerButtonInterface } from "../baseComponents/CustomerButton";
 import { GlobalStyles } from "../GlobalStyles";
-import { GlobalValues } from "../GlobalValues";
 
 const ModalSample = () => {
     const [modalVisible, setModalVisible] = useState(false)
