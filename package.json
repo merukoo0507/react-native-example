@@ -5,14 +5,17 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start --port=9988",
+    "start": "react-native start --port=8081",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
     "@react-navigation/native": "^5.8.10",
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.63.4",
+    "react-native-webview": "^11.13.0",
+    "react-native-svg": "^12.1.1",
+    "react-native-reanimated": "^1.7.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.10",
