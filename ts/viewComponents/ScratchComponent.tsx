@@ -46,51 +46,45 @@ const ScratchComponent = () => {
                         }
                     }}
                 source={{ html: `
-                    <body onload="load()" style="position: fixed; margin-top: 0; margin-left: 0;background-color: rgba(0,0,0,0.4)";>
+                    <body style="
+                    height: 150px; width: 300px; "
+                    onload="load()" style="position: fixed; margin-top: 0; margin-left: 0;background-color: #000";>
 
-                    <img id="canvasImg" crossorigin="anonymous" src="https://cdn09.fhptstatic02.com/images/lhc/mipai_2.png" alt="The Scream" style="height: 150px; width: 300px;border:1px solid #d3d3d3; display: none;">
+                    <img id="canvasImg" crossorigin="anonymous" src="https://cdn09.fhptstatic02.com/images/lhc/mipai_2.png" alt="The Scream" style="height: 100%; width: 100%;
+                    border:5px solid blue; display: none;">
 
                     <div style="position: absolute; 
-                    left: 0; top: 0;
-                    height: 150px; width: 300px; 
+                    height: 100%; width: 100%; 
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
                     background-image: url(https://cdn09.fhptstatic02.com/images/lhc/mipai_2.png);">
 
                     <div style="position: absolute; 
-                        height: 125px; width: 285px;
-                        left: 7px; top: 12px; background-position: center; background-color: #fcfaae;">
+                        height: 90%; width: 95%;
+                        left: 2.5%; top: 5%; background-position: center; background-color: #fcfaae;">
                         <div id="numImg" style="
-                            margin: auto;height: 50px; width: 50px;
+                            margin: auto; margin-top: 10%; height: 150px; width: 150px;
                             background-repeat: no-repeat;
-                            background-size: 50px 50px;
+                            background-size: 150px 150px;
                             background-image: url(https://appstatic.fhptstatic01.com/assets/ball/ball_red.png);">
-                            <p id="openNum" style="text-align: center; line-height: 50px; height: 100%; margin-left: 2px;">0</p>
+                            <p2 id="openNum" style="text-align: center; position: absolute; top: 25%; left: 48%; font-size:80px;">0</p2>
                         </div>
                         
-                        <p id="openAnimal" style="text-align: center; margin-left: 5px;">雞</p>
-                    </div>
-
-                    </div>
-
-                    <p></p>
-                    <div style="position: absolute; 
-                    left: 0; top: 0;
-                    height: 150px; width: 300px; ">
-                    <canvas 
-                    id="myCanvas"
-                    style="height: 150px; width: 300px; 
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: 285px 125px;"></canvas>
-                    </div>
-
-                    <div style="margin-top: 200px;">
-                        <p id="mouseMoveP">11</p>
-                        <p id="mouseDownP">22</p>
-                        <p id="log">AA</p>
-                    </div>
+                        <p id="openAnimal" style="text-align: center; margin-left: 5px; margin-top: 20px;  font-size:80px;">雞</p>
+                        </div>
+                        <div style="position: absolute; 
+                        left: 0; top: 0;
+                        height: 100%; width: 100%; ">
+                            <canvas 
+                            id="myCanvas"
+                            style="position: absolute; 
+                            left: 0; top: 0;
+                            height: 100%; width: 100%; 
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: 100% 100%;"></canvas>
+                        </div>
 
                     <script>
 

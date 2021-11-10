@@ -46,7 +46,7 @@ const App = () => {
   return (
     // <FlexDirectionBasics />
     //<LoadImage />
-    // <ScratchComponent />
+    <ScratchComponent />
     // <ButtonSample />
 
     //Function Components
@@ -66,7 +66,7 @@ const App = () => {
     // <LayoutSample />
     // <Period />
     // <ViewSample />
-    <TurnTable />
+    // <TurnTable />
   );
 };
 
