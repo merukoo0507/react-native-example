@@ -5,11 +5,7 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-<<<<<<< HEAD
     "start": "react-native start",
-=======
-    "start": "react-native start --port=8081",
->>>>>>> scratch
     "test": "jest",
     "lint": "eslint ."
   },
@@ -17,13 +13,10 @@
     "@react-navigation/native": "^5.8.10",
     "react": "16.13.1",
     "react-native": "0.63.4",
-<<<<<<< HEAD
-    "react-native-dialog": "^6.1.2"
-=======
+    "react-native-dialog": "^6.1.2",
     "react-native-webview": "^11.13.0",
     "react-native-svg": "^12.1.1",
     "react-native-reanimated": "^1.7.0"
->>>>>>> scratch
   },
   "devDependencies": {
     "@babel/core": "7.12.10",

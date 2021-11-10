@@ -20,7 +20,7 @@ function useInterval(callback, delay) {
     }, [delay])
 }
 
-export default function CustomHook() {
+const CustomHook = () => {
     const [count, setCount] = useState(0)
 
     useInterval(() => {
@@ -33,3 +33,5 @@ export default function CustomHook() {
         </>
     )
 }
+
+export default CustomHook

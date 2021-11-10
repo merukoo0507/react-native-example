@@ -1,8 +1,8 @@
 import React from 'react'
 import { StyleSheet, View} from 'react-native'
 
-export default function FlexDirectionBasics() {
-    <View style={styles.columnView}  >
+const FlexDirectionBasics = () => {
+    return <View style={styles.columnView}  >
         <View style={styles.rowView} >
             <View style={styles.powderblue}/>
             <View style={styles.skyblue}/>
@@ -55,3 +55,5 @@ const styles = StyleSheet.create({
         backgroundColor: 'steelblue'
     }
 })
+
+export default FlexDirectionBasics
