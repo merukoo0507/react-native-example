@@ -38,15 +38,23 @@ import UseEffectTest from './ts/hooks/UseEffectTest';
 import UseRefTest from './ts/hooks/UseRefTest';
 import UseReducerTest from './ts/hooks/UseReducerTest'
 import CustomHook from './ts/hooks/CustomHook';
+<<<<<<< HEAD
 import ViewSample from './ts/samples/ViewSample';
 import LayoutSample from './ts/samples/toggleSample/LayoutSample';
 import ModalSample from './ts/samples/ModalSample';
 import DialogSample from './ts/samples/DialogSample';
+=======
+import LayoutSample from './ts/viewComponents/LayoutSample';
+import Period from './ts/Period';
+import ScratchComponent from './ts/viewComponents/ScratchComponent';
+import { TurnTable } from './ts/viewComponents/TurnTable';
+>>>>>>> scratch
 
 const App = () => {
   return (
     // <FlexDirectionBasics />
-    // <LoadImage />
+    //<LoadImage />
+    <ScratchComponent />
     // <ButtonSample />
 
     //Function Components
@@ -63,10 +71,17 @@ const App = () => {
     // <UseRefTest />
     // <CustomHook />
     // <ViewSample />
+<<<<<<< HEAD
     <LayoutSample />
     // <ModalSample />
     // <DialogSample />
 
+=======
+    // <LayoutSample />
+    // <Period />
+    // <ViewSample />
+    // <TurnTable />
+>>>>>>> scratch
   );
 };
 
