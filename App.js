@@ -27,6 +27,8 @@ import UseStateTest from './ts/hooks/UseStateTest'
 
 import LayoutSample from './ts/sample/toggleSample/LayoutSample'
 
+import ScratchComponent from './ts/sample/ScratchComponent'
+
 const App = () => {
   return (
 //base
@@ -50,11 +52,11 @@ const App = () => {
 
 //sample
   //toggle
-    <LayoutSample />
+    // <LayoutSample />
 
     // <DialogSample />
     // <ModalSample />
-    // <ScratchComponent />
+    <ScratchComponent />
     // <TurnTable />
   )
 };
